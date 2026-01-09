@@ -38,6 +38,7 @@ export const Password = () => {
             </div>
                
             <div>
+
                 <div>
                     <CheckBox content="length should be atleast 8 chars" status={lengthCheck()}/>
                 </div>

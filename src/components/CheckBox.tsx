@@ -1,5 +1,10 @@
 
-export const CheckBox = ({content, status}) => {
+interface TypeCheckBox {
+    content: string,
+    status: boolean
+}
+
+export const CheckBox = ({content, status}: TypeCheckBox) => {
 
     return (
         <div>
