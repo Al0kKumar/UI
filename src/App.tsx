@@ -1,13 +1,17 @@
-import './App.css'
-import { Password } from './components/Password'
-function App() {
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import Home from "./pages/Home";
+import PasswordPage from "./pages/Password";
+
+function App() {
   return (
-    <div className='min-h screen bg-black text-white'>
-      <div className='p-2 items-center'> Assignment One </div>
-      <Password/>
-    </div>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/password" element={<PasswordPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
